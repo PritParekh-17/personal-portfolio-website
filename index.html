@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prit Parekh — Aspiring Software Engineer | Computer Engineering Student</title>
+<meta name="description" content="Prit Parekh — Computer Engineering student at Dharmsinh Desai University building practical web projects with PHP, MySQL, JavaScript, and React while learning DSA and TypeScript.">
+<meta name="theme-color" content="#0a0b0d">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Prit Parekh — Aspiring Software Engineer">
+<meta property="og:description" content="Computer Engineering student at DDU building practical web projects and learning modern web development.">
+<meta property="og:image" content="photo.jpeg">
+<meta property="og:url" content="https://personal-portfolio-website-sandy-seven.vercel.app">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%235b8db8%22>&gt;_</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="global.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="#top" class="logo">
+      <span class="logo-mark">&gt;_</span><span class="logo-text">prit<span class="accent">.</span>dev</span>
+    </a>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#top" class="nav-link active" data-section="top">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#achievements" class="nav-link" data-section="achievements">Achievements</a></li>
+        <li><a href="#contact" class="nav-link nav-cta" data-section="contact">Contact</a></li>
+      </ul>
+      <span class="nav-indicator" id="nav-indicator" aria-hidden="true"></span>
+    </nav>
+
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+    <ul>
+      <li><a href="#top" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#achievements" class="nav-link">Achievements</a></li>
+      <li><a href="#gdg" class="nav-link">GDG</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="shell">
+      <div class="hero-grid">
+
+        <div class="hero-copy">
+          <p class="mono-tag hero-anim" style="--d:0">$ whoami</p>
+          <h1 class="hero-name hero-anim" style="--d:1">Prit Parekh</h1>
+          <p class="hero-role hero-anim" style="--d:2">Computer Engineering Student</p>
+          <p class="hero-desc hero-anim" style="--d:3">Aspiring software engineer building web experiences while learning, experimenting, and solving problems — one project at a time.</p>
+
+          <dl class="meta-grid hero-anim" style="--d:4">
+            <div class="meta-row"><dt>Location</dt><dd>Gujarat, India</dd></div>
+            <div class="meta-row"><dt>Focus</dt><dd>Web Development</dd></div>
+            <div class="meta-row"><dt>Learning</dt><dd>DSA · React · TypeScript</dd></div>
+            <div class="meta-row"><dt>Status</dt><dd><span class="status-dot"></span>Building</dd></div>
+          </dl>
+
+          <div class="hero-actions hero-anim" style="--d:5">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="https://github.com/PritParekh-17" target="_blank" rel="noopener" class="btn btn-ghost">GitHub Profile</a>
+          </div>
+        </div>
+
+        <div class="hero-terminal hero-anim" style="--d:2" aria-hidden="false">
+          <div class="terminal-window">
+            <div class="terminal-bar">
+              <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+              <span class="terminal-title">prit@dev:~</span>
+            </div>
+            <div class="terminal-body">
+              <p class="tline"><span class="prompt">prit@dev:~$</span> whoami</p>
+              <p class="tout">&gt; computer-engineering-student</p>
+              <p class="tout">&gt; aspiring-software-engineer</p>
+              <p class="tout">&gt; web-development</p>
+              <p class="tout">&gt; problem-solving</p>
+              <p class="tline tline-spaced"><span class="prompt">prit@dev:~/projects$</span> ls</p>
+              <p class="tout tout-files">lost-and-found/&nbsp;&nbsp;health-record-hub/&nbsp;&nbsp;portfolio/&nbsp;&nbsp;gdg-quiz-arena/</p>
+              <p class="tline tline-spaced" id="typed-line"><span class="prompt">prit@dev:~$</span> <span id="typed-text"></span><span class="cursor" aria-hidden="true">&#9608;</span></p>
+            </div>
+            <div class="terminal-footer">
+              <span class="branch">&#9095; main</span>
+              <span class="sep">&middot;</span>
+              <span>0 problems</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="shell">
+      <p class="cmd-label">$ cat about.md</p>
+      <h2 class="section-title">About</h2>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a Computer Engineering student at Dharmsinh Desai University, focused on building practical web projects, strengthening problem-solving skills, and improving through hands-on development.</p>
+          <p>My work so far sits between the classroom and the terminal — coursework in C and C++, self-directed builds in PHP, MySQL and JavaScript, and a growing interest in React, TypeScript and modern front-end tooling. I like shipping small, real things rather than just reading about them.</p>
+          <div class="avatar-wrap">
+            <img src="photo.jpeg" alt="Portrait of Prit Parekh" class="avatar-photo" width="120" height="120" loading="lazy">
+          </div>
+        </div>
+
+        <div class="about-cards">
+          <div class="stat-card">
+            <span class="stat-num" data-count-to="9.55" data-decimals="2">0</span>
+            <span class="stat-label">CGPA / 10</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count-to="2029" data-decimals="0">0</span>
+            <span class="stat-label">Graduation</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">Web</span>
+            <span class="stat-label">Development</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">Build</span>
+            <span class="stat-label">Real Projects</span>
+          </div>
+        </div>
+      </div>
+
+      <ol class="timeline">
+        <li>
+          <span class="tl-year">2025</span>
+          <span class="tl-event">Qualified JEE Advanced; started B.Tech Computer Engineering at DDU</span>
+        </li>
+        <li>
+          <span class="tl-year">2025</span>
+          <span class="tl-event">Built HealthVault at DUHacks 5.0, a national-level hackathon, in a team of four</span>
+        </li>
+        <li>
+          <span class="tl-year">2025</span>
+          <span class="tl-event">Joined the Web Development team at GDG DDU</span>
+        </li>
+        <li>
+          <span class="tl-year">Now</span>
+          <span class="tl-event">Learning DSA, React and TypeScript while shipping new projects</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section-alt" id="skills">
+    <div class="shell">
+      <p class="cmd-label">$ ls skills/</p>
+      <h2 class="section-title">Technology Matrix</h2>
+
+      <div class="matrix-grid">
+        <div class="matrix-card">
+          <h3 class="matrix-heading">Foundations</h3>
+          <ul class="tag-list">
+            <li>C</li><li>C++</li>
+          </ul>
+        </div>
+        <div class="matrix-card">
+          <h3 class="matrix-heading">Web</h3>
+          <ul class="tag-list">
+            <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="matrix-card">
+          <h3 class="matrix-heading">Backend / Data</h3>
+          <ul class="tag-list">
+            <li>PHP</li><li>MySQL</li>
+          </ul>
+        </div>
+        <div class="matrix-card matrix-card-exploring">
+          <h3 class="matrix-heading">Exploring</h3>
+          <ul class="tag-list">
+            <li>React</li><li>TypeScript</li><li>Tailwind CSS</li>
+          </ul>
+        </div>
+        <div class="matrix-card">
+          <h3 class="matrix-heading">Tools</h3>
+          <ul class="tag-list">
+            <li>Git</li><li>GitHub</li><li>Vite</li><li>Vercel</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="shell">
+      <p class="cmd-label">$ ls projects/ -la</p>
+      <h2 class="section-title">Projects</h2>
+
+      <div class="project-list">
+
+        <article class="project-card" data-tilt>
+          <div class="project-head">
+            <span class="project-index">01 / PHP + MYSQL</span>
+            <h3 class="project-name">Lost and Found Portal</h3>
+          </div>
+          <p class="project-desc">A campus utility for reporting and tracking lost or found items. Built the full flow — item submission, listing, and search — with a PHP backend and a MySQL database behind a straightforward HTML/CSS/JS front end.</p>
+          <ul class="tag-list tag-list-tight">
+            <li>PHP</li><li>MySQL</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/PritParekh-17" target="_blank" rel="noopener" class="link-cta">Source on GitHub &#8599;</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-tilt>
+          <div class="project-head">
+            <span class="project-index">02 / REACT + TYPESCRIPT</span>
+            <h3 class="project-name">HealthVault (Health Record Hub)</h3>
+          </div>
+          <p class="project-desc">Built at DUHacks 5.0, a national-level hackathon, with a team of four. A digital health-record system designed to keep a person's medical history organized and accessible, built with React, TypeScript and Tailwind CSS.</p>
+          <ul class="tag-list tag-list-tight">
+            <li>React</li><li>TypeScript</li><li>Tailwind CSS</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/PritParekh-17" target="_blank" rel="noopener" class="link-cta">Source on GitHub &#8599;</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-tilt>
+          <div class="project-head">
+            <span class="project-index">03 / HTML + CSS + JAVASCRIPT</span>
+            <h3 class="project-name">Personal Portfolio Website</h3>
+          </div>
+          <p class="project-desc">This site — designed and built from scratch as a developer-first, terminal-inspired interface to present my work, skills and background to recruiters and collaborators.</p>
+          <ul class="tag-list tag-list-tight">
+            <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/PritParekh-17/personal-portfolio-website" target="_blank" rel="noopener" class="link-cta">Source on GitHub &#8599;</a>
+            <a href="https://personal-portfolio-website-sandy-seven.vercel.app" target="_blank" rel="noopener" class="link-cta link-cta-muted">Live Site &#8599;</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-tilt>
+          <div class="project-head">
+            <span class="project-index">04 / JAVASCRIPT</span>
+            <h3 class="project-name">GDG Quiz Arena</h3>
+          </div>
+          <p class="project-desc">An interactive quiz application built while contributing to the Web Development team at GDG DDU, focused on clean UI state handling and score tracking in vanilla JavaScript.</p>
+          <ul class="tag-list tag-list-tight">
+            <li>JavaScript</li><li>HTML</li><li>CSS</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/PritParekh-17" target="_blank" rel="noopener" class="link-cta">Source on GitHub &#8599;</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-tilt>
+          <div class="project-head">
+            <span class="project-index">05 / NEXT.JS + FASTAPI</span>
+            <h3 class="project-name">SkillBridge — SIH26044</h3>
+          </div>
+          <p class="project-desc">An academia-industry platform built for Smart India Hackathon 2026 (Problem Statement SIH26044), connecting students, institutions, faculty and industry recruiters around one shared skill model — covering assessments, skill-gap analysis, learning recommendations, and a deterministic opportunity-matching engine with role-based access.</p>
+          <ul class="tag-list tag-list-tight">
+            <li>Next.js</li><li>TypeScript</li><li>Tailwind CSS</li><li>FastAPI</li><li>PostgreSQL</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/PritParekh-17/SkillBridge-SIH26044" target="_blank" rel="noopener" class="link-cta">Source on GitHub &#8599;</a>
+            <a href="https://skill-bridge-sih-26044-six.vercel.app" target="_blank" rel="noopener" class="link-cta link-cta-muted">Live Site &#8599;</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-tilt>
+          <div class="project-head">
+            <span class="project-index">06 / NEXT.JS + FASTAPI + WEBSOCKETS</span>
+            <h3 class="project-name">StageFlow</h3>
+          </div>
+          <p class="project-desc">A real-time event operations platform built for Bit N Build '26 (Gujarat Round, Problem Statement PS-5) for anchors and backstage teams — live stage control with an autonomous delay-cascade engine, AI-generated anchor scripts, and WebSocket-driven updates across every connected operator.</p>
+          <ul class="tag-list tag-list-tight">
+            <li>Next.js</li><li>TypeScript</li><li>Tailwind CSS</li><li>FastAPI</li><li>WebSockets</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/PritParekh-17/stageflow" target="_blank" rel="noopener" class="link-cta">Source on GitHub &#8599;</a>
+            <a href="https://stageflow-nu.vercel.app" target="_blank" rel="noopener" class="link-cta link-cta-muted">Live Site &#8599;</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACHIEVEMENTS ============ -->
+  <section class="section section-alt" id="achievements">
+    <div class="shell">
+      <p class="cmd-label">$ cat achievements.log</p>
+      <h2 class="section-title">Achievements</h2>
+
+      <ul class="ledger">
+        <li class="ledger-row">
+          <span class="ledger-date">2025</span>
+          <span class="ledger-cat">Admissions</span>
+          <span class="ledger-desc">Qualified JEE Advanced</span>
+        </li>
+        <li class="ledger-row">
+          <span class="ledger-date">&mdash;</span>
+          <span class="ledger-cat">HackerRank</span>
+          <span class="ledger-desc">3-Star, Silver badge in C++</span>
+        </li>
+        <li class="ledger-row">
+          <span class="ledger-date">&mdash;</span>
+          <span class="ledger-cat">NCSC</span>
+          <span class="ledger-desc">Gujarat State representative, National Children's Science Congress</span>
+        </li>
+        <li class="ledger-row">
+          <span class="ledger-date">&mdash;</span>
+          <span class="ledger-cat">NCSC</span>
+          <span class="ledger-desc">Vadodara District representative, National Children's Science Congress</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ GDG ============ -->
+  <section class="section" id="gdg">
+    <div class="shell">
+      <p class="cmd-label">$ cd gdg-ddu</p>
+      <div class="gdg-panel">
+        <div class="gdg-text">
+          <h2 class="section-title section-title-tight">Web Development, GDG DDU</h2>
+          <p>I contribute as a Web Development team member with Google Developer Groups at Dharmsinh Desai University — building and supporting web tools for the community, and working alongside other student developers on shared projects like GDG Quiz Arena.</p>
+        </div>
+        <div class="gdg-badge">
+          <span class="gdg-badge-label">Role</span>
+          <span class="gdg-badge-value">Web Dev Team Member</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LEARNING / NOW ============ -->
+  <section class="section section-alt" id="learning">
+    <div class="shell">
+      <p class="cmd-label">$ current_focus --watch</p>
+      <h2 class="section-title">Currently Building / Learning</h2>
+
+      <div class="focus-list">
+        <div class="focus-row">
+          <span class="focus-name">Data Structures &amp; Algorithms</span>
+          <span class="focus-meter" role="img" aria-label="In active progress">
+            <span class="focus-fill" style="--fill:70%"></span>
+          </span>
+        </div>
+        <div class="focus-row">
+          <span class="focus-name">React</span>
+          <span class="focus-meter" role="img" aria-label="In active progress">
+            <span class="focus-fill" style="--fill:55%"></span>
+          </span>
+        </div>
+        <div class="focus-row">
+          <span class="focus-name">TypeScript</span>
+          <span class="focus-meter" role="img" aria-label="Early progress">
+            <span class="focus-fill" style="--fill:35%"></span>
+          </span>
+        </div>
+        <div class="focus-row">
+          <span class="focus-name">Modern Web Development</span>
+          <span class="focus-meter" role="img" aria-label="In active progress">
+            <span class="focus-fill" style="--fill:60%"></span>
+          </span>
+        </div>
+      </div>
+      <p class="focus-note">Self-assessed and updated as I go — not a formal metric.</p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact-section" id="contact">
+    <div class="shell">
+      <p class="cmd-label">$ echo contact</p>
+      <h2 class="contact-heading">Let's build something.</h2>
+      <a href="mailto:preet1758parekh@gmail.com" class="contact-email">preet1758parekh@gmail.com</a>
+
+      <div class="contact-actions">
+        <a href="mailto:preet1758parekh@gmail.com" class="btn btn-primary">Email Me</a>
+        <a href="https://www.linkedin.com/in/prit8an/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+        <a href="https://github.com/PritParekh-17" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="shell footer-inner">
+    <p>&copy; 2026 Prit Parekh &middot; Dharmsinh Desai University</p>
+    <p class="footer-built">Built with HTML, CSS &amp; JavaScript</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
